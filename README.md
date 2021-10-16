@@ -1,2 +1,2 @@
-# the-grammer-to-go
-the-grammer-to-go
+# the-grammar-to-go
+the-grammar-to-go
