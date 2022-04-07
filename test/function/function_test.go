@@ -3,8 +3,9 @@
 package function
 
 import (
-    functiont "photowey.com/the-grammar-to-go/grammar/function"
     "testing"
+
+    functiont "photowey.com/the-grammar-to-go/grammar/function"
 )
 
 // TestVariadicParameterFunctionSum 测试-可变参数函数求和

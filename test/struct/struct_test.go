@@ -1,8 +1,9 @@
 package structt
 
 import (
-    structt "photowey.com/the-grammar-to-go/grammar/struct"
     "testing"
+
+    structt "photowey.com/the-grammar-to-go/grammar/struct"
 )
 
 // TestStructEmployee 测试-结构体-{@code Employee}

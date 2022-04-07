@@ -19,7 +19,7 @@ import (
 // }
 
 func TestConcatStringByAdd(t *testing.T) {
-    assert := assert.New(t)
+    asserts := assert.New(t)
     elements := []string{"1", "2", "3", "4", "5"}
     rvt := ""
 
@@ -27,11 +27,11 @@ func TestConcatStringByAdd(t *testing.T) {
         rvt += elem
     }
 
-    assert.Equal("12345", rvt)
+    asserts.Equal("12345", rvt)
 }
 
 func TestConcatStringAddByBuffered(t *testing.T) {
-    assert := assert.New(t)
+    asserts := assert.New(t)
     elements := []string{"1", "2", "3", "4", "5"}
     var buffer bytes.Buffer
 
@@ -39,7 +39,7 @@ func TestConcatStringAddByBuffered(t *testing.T) {
         buffer.WriteString(elem)
     }
 
-    assert.Equal("12345", buffer.String())
+    asserts.Equal("12345", buffer.String())
 }
 
 func BenchmarkConcatStringByAdd(b *testing.B) {
@@ -56,7 +56,7 @@ func BenchmarkConcatStringByAdd(b *testing.B) {
     b.StartTimer()
 }
 
-func BenchmarkConcatStringByBufferedd(b *testing.B) {
+func BenchmarkConcatStringByBuffered(b *testing.B) {
     elements := []string{"1", "2", "3", "4", "5"}
     b.ResetTimer()
 

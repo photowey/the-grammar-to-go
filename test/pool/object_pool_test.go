@@ -22,7 +22,7 @@ func TestObjectPool(t *testing.T) {
 
 }
 
-func TestObjectPoolAndRealse(t *testing.T) {
+func TestObjectPoolAndRelease(t *testing.T) {
     bufferedSize := 10
     times := bufferedSize + 1
     pool := poolt.NewObjectPool(10)
