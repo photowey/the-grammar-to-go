@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-func DataProductor(ch chan int, times int, wg *sync.WaitGroup) {
+func DataProducer(ch chan int, times int, wg *sync.WaitGroup) {
 
 	go func() {
 		for i := 0; i < times; i++ {

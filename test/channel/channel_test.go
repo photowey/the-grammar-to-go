@@ -13,7 +13,7 @@ func TestChannel(t *testing.T) {
 
 	wg.Add(1)
 	// 单生产者 - 生产
-	channelt.DataProductor(ch, 10, &wg)
+	channelt.DataProducer(ch, 10, &wg)
 
 	// 多消费者 - 消费
 	wg.Add(1)
