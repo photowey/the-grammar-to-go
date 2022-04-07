@@ -9,9 +9,9 @@ package function
 
 // VariadicParameterFunctionSum 可变参数-函数-求和
 func VariadicParameterFunctionSum(ops ...int) (sum int) {
-	sum = 0
-	for _, op := range ops {
-		sum += op
-	}
-	return
+    sum = 0
+    for _, op := range ops {
+        sum += op
+    }
+    return
 }

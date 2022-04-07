@@ -3,7 +3,7 @@
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 // 必须是 main 包：package main
@@ -14,5 +14,5 @@ import (
 // 通过 os.Exit 来返回状态
 
 func main() {
-	fmt.Println("Hello world!")
+    fmt.Println("Hello world!")
 }
