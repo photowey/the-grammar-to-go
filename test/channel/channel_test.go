@@ -17,11 +17,11 @@ func TestChannel(t *testing.T) {
 
 	// 多消费者 - 消费
 	wg.Add(1)
-	channelt.DataComsumer(ch, 1111, &wg)
+	channelt.DataConsumer(ch, 1111, &wg)
 	wg.Add(1)
-	channelt.DataComsumer(ch, 2222, &wg)
+	channelt.DataConsumer(ch, 2222, &wg)
 	wg.Add(1)
-	channelt.DataComsumer(ch, 3333, &wg)
+	channelt.DataConsumer(ch, 3333, &wg)
 
 	wg.Wait()
 }

@@ -25,12 +25,12 @@ func DataProductor(ch chan int, times int, wg *sync.WaitGroup) {
 
 }
 
-func DataComsumer(ch chan int, no int, wg *sync.WaitGroup) {
+func DataConsumer(ch chan int, no int, wg *sync.WaitGroup) {
 
 	go func() {
 		for {
 			if data, ok := <-ch; ok {
-				fmt.Printf("the comsumer-no:%d receive data is:%d\n", no, data)
+				fmt.Printf("the consumer-no:%d receive data is:%d\n", no, data)
 			} else {
 				break
 			}

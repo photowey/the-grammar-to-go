@@ -27,7 +27,6 @@ func HandleGroutineError(times int) {
 func runTask(id int) string {
 	time.Sleep(time.Millisecond * 10)
 	return fmt.Sprintf("the result is from id:%d", id)
-
 }
 
 // NormalChannel use normal channel

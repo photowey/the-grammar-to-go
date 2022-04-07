@@ -12,23 +12,23 @@ func square(op int) int {
 
 func TestSquare(t *testing.T) {
 	inputs := [...]int{1, 2, 3}
-	exptected := [...]int{1, 4, 9}
+	expected := [...]int{1, 4, 9}
 
 	for i := 0; i < len(inputs); i++ {
 		rvt := square(inputs[i])
-		if rvt != exptected[i] {
-			t.Errorf("input is:%d,the expected is:%d, the actual is:%d", inputs[i], exptected[i], rvt)
+		if rvt != expected[i] {
+			t.Errorf("input is:%d,the expected is:%d, the actual is:%d", inputs[i], expected[i], rvt)
 		}
 	}
 }
 
 func TestSquareAssert(t *testing.T) {
 	inputs := [...]int{1, 2, 3}
-	exptected := [...]int{1, 4, 9}
+	expected := [...]int{1, 4, 9}
 
 	for i := 0; i < len(inputs); i++ {
 		rvt := square(inputs[i])
-		assert.Equal(t, exptected[i], rvt)
+		assert.Equal(t, expected[i], rvt)
 	}
 }
 
